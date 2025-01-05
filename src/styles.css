@@ -1,0 +1,165 @@
+.container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    width: 100%;
+}
+
+.loadingContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    background-color: #222;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    height: 80vh;
+    overflow: hidden;
+}
+
+.coverImage {
+    flex-shrink: 0;
+    width: 150px;
+    height: 225px;
+    margin-right: 20px;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.cardContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: 100%;
+}
+
+.title {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: bold;
+    word-break: break-word;
+}
+
+.section {
+    margin-bottom: 15px;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.listItem {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 5px;
+}
+
+.bookItem {
+    display: flex;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    list-style: none;
+    background-color: #222;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bookImage {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 4px;
+}
+
+.bookDetails {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    fit
+}
+
+.bookTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.bookInfo {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.twoColumnContainer {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1;
+    min-width: 300px;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.linkStyle {
+    text-decoration: none;
+    color: #2a9d8f;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+}
+
+.linkStyle::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.linkStyle:hover::after {
+    background-color: #e76f51;
+}
+
+.linkStyle:focus::after {
+    background-color: #264653;
+}
